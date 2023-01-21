@@ -12,12 +12,13 @@ app.get('/blog', (req,res) => {
 //show
 app.get('/blog/:id', (req, res) => {
      res.send(mockBlog[req.params.id]);
- })
+})
 
  //create
  app.post('/blog', (req,res) => {
+     res.send(req.body)
  }
- 
+
  )
 app.listen(3008,() => {
      console.log("I hear you on this port 3008")
